@@ -10,100 +10,74 @@
     body { background: #0a0a0a; color: #ddd; font-family: Georgia, serif; }
     .tar-bg { background: linear-gradient(45deg, #0f0a0a, #1a0000, #220000); }
     .flame { text-shadow: 0 0 30px #ff0000, 0 0 60px #8b0000, 0 0 90px #ff4500; }
-    .drip { animation: drip 3s infinite linear; }
-    @keyframes drip { 0% { transform: translateY(-5px); } 100% { transform: translateY(15px); } }
+    .drip { animation: drip 4s infinite linear; }
+    @keyframes drip { 0% { transform: translateY(-8px); } 100% { transform: translateY(12px); } }
+    img { max-width: 100%; height: auto; display: block; }
   </style>
 </head>
 <body class="tar-bg min-h-screen overflow-x-hidden">
 
-  <!-- HERO - DEMONA FOCUS -->
-  <div class="min-h-screen flex items-center justify-center relative">
+  <!-- HERO -->
+  <div class="min-h-screen flex items-center justify-center relative px-4">
     <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,#440000_20%,transparent_70%)]"></div>
     
-    <div class="text-center z-10 px-6 max-w-4xl">
-      <div class="mb-6 text-red-700 text-sm tracking-[0.5em]">ANCIENT • CORRUPT • HUNGRY</div>
+    <div class="text-center z-10 max-w-2xl">
+      <div class="text-red-700 text-xs md:text-sm tracking-widest mb-4">ANCIENT • TAR • BLACK FLAME</div>
+      <h1 class="text-6xl md:text-8xl font-black flame text-red-600 tracking-tighter leading-none">DEMONA<br>DELAQUE</h1>
+      <p class="text-2xl md:text-4xl mt-4 text-amber-300">Black Flame Vault</p>
       
-      <h1 class="text-8xl md:text-9xl font-black flame text-red-600 tracking-tighter leading-none">DEMONA<br>DELAQUE</h1>
-      
-      <p class="text-4xl md:text-5xl mt-6 text-amber-300">Black Flame Vault</p>
-      
-      <div class="max-w-lg mx-auto mt-10 text-xl text-gray-300">
-        She wears the skin of an innocent woman.<br>
-        Beneath it she drips thick black tar and burning flame.<br>
-        Everything she touches is ruined. Forever.
-      </div>
+      <p class="mt-8 text-base md:text-xl text-gray-300">
+        She smiles like the girl next door.<br>
+        She drips thick black tar and corrupts everything she touches.
+      </p>
 
-      <a href="#join" 
-         class="mt-16 inline-block bg-red-950 hover:bg-red-900 border-4 border-red-600 text-white text-3xl font-bold px-20 py-8 transition-all active:scale-95">
-        LET DEMONA IN • $19/mo
+      <a href="#join" class="mt-12 md:mt-16 inline-block bg-red-950 hover:bg-red-900 border-4 border-red-600 text-white text-xl md:text-3xl font-bold px-12 md:px-20 py-6 md:py-8 transition-all">
+        LET DEMONA RUIN YOU • $19/mo
       </a>
     </div>
-
-    <!-- Subtle tar drip effect -->
-    <div class="absolute bottom-10 left-1/2 text-red-800 text-2xl animate-pulse">↓</div>
   </div>
 
-  <!-- DEMONA LORE -->
-  <div class="py-20 border-t border-red-900">
-    <div class="max-w-5xl mx-auto px-6 text-center">
-      <h2 class="text-5xl font-bold text-red-500 mb-12">The Beast Wearing Human Skin</h2>
-      <p class="text-xl max-w-2xl mx-auto text-gray-400">
-        Demona Delaque does not just fuck you.<br>
-        She slips into your life wearing a sweet smile and modest dress…<br>
-        then floods you with thick, living tar until nothing pure remains.
-      </p>
-    </div>
-  </div>
-
-  <!-- WHAT YOU GET -->
-  <div class="py-20 bg-black/70">
-    <div class="max-w-5xl mx-auto px-6">
-      <h2 class="text-5xl font-bold text-center text-red-500 mb-16">What Demona Gives You Inside the Vault</h2>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-black/80 p-8 border border-red-900 hover:border-red-600 transition-all">
-          <h3 class="text-2xl mb-6 text-red-400">Daily Corruption</h3>
-          <p class="text-gray-400">Fresh extreme scenes every day. New victims. New ways she breaks them.</p>
-        </div>
-        <div class="bg-black/80 p-8 border border-red-900 hover:border-red-600 transition-all">
-          <h3 class="text-2xl mb-6 text-red-400">Custom Ruin</h3>
-          <p class="text-gray-400">Send your fantasy. Demona wears it, twists it, and sends you the dripping proof.</p>
-        </div>
-        <div class="bg-black/80 p-8 border border-red-900 hover:border-red-600 transition-all">
-          <h3 class="text-2xl mb-6 text-red-400">Live Black Flame</h3>
-          <p class="text-gray-400">Watch (or join) her real-time descents into churches, families, and minds.</p>
-        </div>
+  <!-- DEMONA GALLERY -->
+  <div class="py-12 md:py-20 bg-black/70">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl md:text-5xl font-bold text-center text-red-500 mb-10">Witness Her</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <!-- Replace these src with real image links after we generate them -->
+        <img src="https://picsum.photos/id/1015/800/1200" class="rounded border border-red-900 hover:border-red-600 transition-all" alt="Demona innocent skin">
+        <img src="https://picsum.photos/id/1027/800/1200" class="rounded border border-red-900 hover:border-red-600 transition-all" alt="Demona tar drip">
+        <img src="https://picsum.photos/id/106/800/1200" class="rounded border border-red-900 hover:border-red-600 transition-all" alt="Demona in church">
+        <img src="https://picsum.photos/id/201/800/1200" class="rounded border border-red-900 hover:border-red-600 transition-all" alt="Demona full tar">
+        <img src="https://picsum.photos/id/133/800/1200" class="rounded border border-red-900 hover:border-red-600 transition-all" alt="Demona victim">
+        <img src="https://picsum.photos/id/180/800/1200" class="rounded border border-red-900 hover:border-red-600 transition-all" alt="Demona closeup">
       </div>
     </div>
   </div>
 
-  <!-- PRICING - DEMONA CENTERED -->
-  <div id="join" class="py-24 bg-black">
-    <div class="max-w-4xl mx-auto px-6 text-center">
-      <h2 class="text-6xl font-black mb-4 text-red-500">Surrender to Demona</h2>
-      <p class="text-xl text-gray-400 mb-12">Once she touches you, there is no going back.</p>
-
-      <div class="max-w-md mx-auto border-4 border-red-600 p-12 bg-black/90">
-        <h3 class="text-4xl mb-2">Black Flame Vault</h3>
-        <div class="text-7xl font-black text-red-500 mb-8">$19 <span class="text-2xl font-normal">/ month</span></div>
-        
-        <ul class="text-left space-y-4 mb-12 text-lg">
-          <li>✅ Daily Demona depravity drops</li>
-          <li>✅ Unlimited custom corruption</li>
-          <li>✅ Private live ruin sessions</li>
-          <li>✅ Demona remembers your weaknesses</li>
-        </ul>
-
-        <button onclick="alert('Connect Telegram Stars or Ko-fi here - I can add the real button code next')" 
-                class="w-full py-8 bg-red-700 hover:bg-red-600 text-2xl font-bold border border-red-400">
-          GIVE YOURSELF TO DEMONA
-        </button>
+  <!-- BENEFITS -->
+  <div class="py-12 md:py-20 px-4 max-w-4xl mx-auto">
+    <h2 class="text-3xl md:text-5xl font-bold text-center text-red-500 mb-12">What Demona Offers Inside</h2>
+    <div class="space-y-8 md:space-y-0 md:grid md:grid-cols-3 gap-8 text-center md:text-left">
+      <div class="border border-red-900 p-8 hover:border-red-600 transition-all">
+        <h3 class="text-xl md:text-2xl mb-4">Daily Tar Drops</h3>
+        <p class="text-gray-400">New extreme Demona scenes every single day.</p>
+      </div>
+      <div class="border border-red-900 p-8 hover:border-red-600 transition-all">
+        <h3 class="text-xl md:text-2xl mb-4">Custom Corruption</h3>
+        <p class="text-gray-400">Tell her your fantasy. She wears it and sends proof.</p>
+      </div>
+      <div class="border border-red-900 p-8 hover:border-red-600 transition-all">
+        <h3 class="text-xl md:text-2xl mb-4">Live Black Flame</h3>
+        <p class="text-gray-400">Watch her ruin victims in real time.</p>
       </div>
     </div>
   </div>
 
-  <footer class="text-center py-12 text-xs text-gray-600 border-t border-red-950">
-    Demona Delaque © 2026 • She does not ask permission. She only takes.
-  </footer>
-
-</body>
-</html>
+  <!-- PRICING -->
+  <div id="join" class="py-16 md:py-24 bg-black px-4">
+    <div class="max-w-md mx-auto text-center border-4 border-red-600 p-8 md:p-12">
+      <h2 class="text-4xl md:text-6xl font-black text-red-500">Black Flame Vault</h2>
+      <div class="text-6xl md:text-7xl font-black text-red-500 mt-6">$19 <span class="text-2xl">/mo</span></div>
+      
+      <ul class="mt-10 space-y-4 text-left text-base md:text-lg">
+        <li>✅ Daily Demona depravity</li>
+        <li>✅ Unlimited custom requests
